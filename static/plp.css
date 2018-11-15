@@ -4,6 +4,7 @@ HTML {
 
 body {
     background: linear-gradient(35deg, blue, teal, rgb(12, 109, 122));
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -20,18 +21,12 @@ main {
 
 .top-right {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 48px;
-}
-
-#img-text {
-    color: #202020;
-    letter-spacing: .1em;
-    text-shadow: 
-      -1px -1px 1px #111, 
-      2px 2px 1px #363636;
+    font-size: 32px;
+    font-style: italic;
+    color: white;
 }
 
 img {
