@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/portfolio.css">
+
+    <script>
+        function showProjectsA() {
+            var x = document.querySelector('#hidden-elements');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function showProjectsB() {
+            var x = document.querySelector('#hidden-webpages');
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul id='navbar'>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="welcome-section" class="intro">
+        <h1>Hey I'm Paul.</h1>
+        <p>a web developer</p>
+    </div>
+
+    <div id="projects" class="work">
+        <h2 class="work-header">These are some sample webpages I made</h2>
+        <a href="tribute.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="../static/tribute.png" alt="project">
+            <div class="project-title">Tribute Page</div>
+        </a>
+        <a href="technicaldoc.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="../static/technicaldoc.png" alt="project">
+            <div class="project-title">Technical Doc</div>
+        </a>
+        <a href="plp.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="../static/plp.png" alt="project">
+            <div class="project-title">Product Landing Page</div>
+        </a>
+    
+        
+    
+        <!--<div id="hidden-webpages" style="display: none;">-->
+            <a href="../templates/survey.html" target="_blank" class="project project-tile">
+                <img class="project-pic" src="../static/survey.png" alt="project">
+                <div class="project-title">Exercise Survey</div>
+            </a>
+            <a href="https://codepen.io/FreeCodeCamp/pen/PNKdjo" target="_blank" class="project project-tile">
+                <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642772/7d02406c-6171-11e6-8c79-40a2933163dc.png" alt="project">
+                <div class="project-title">JavaScript Calculator</div>
+            </a>
+
+            <a href="https://codepen.io/FreeCodeCamp/pen/KzXQgy" target="_blank" class="project project-tile">
+                <img class="project-pic" src="https://cloud.githubusercontent.com/assets/15967809/17642775/7d354304-6171-11e6-8b56-66eee4681d88.png" alt="project">
+                <div class="project-title">Tic Tac Toe Game</div>
+            </a>
+
+        </div>    
+        <a href="https://github.com/tuura032/" class="show-all" target="_blank">Show all</a>
+        
+        <!--<a class="show-all2" onclick="showProjectsB()">Show all</a>
+        <div style="height: 90px; background: white;"></div>-->
+    </div>
+
+    
+    
+    <div id="projects2" class="work">
+        <h2 class="work-header">Highlighted Projects</h2>
+        <a href="#" target="_blank" class="project project-tile project2-bg">
+            <img class="project-pic" src="../static/leaguestats.png" alt="project">
+            <div class="project-title">League Stats</div>
+        </a>
+        <a href="technicaldoc.html" target="_blank" class="project project-tile project2-bg">
+            <img class="project-pic" src="../static/technicaldoc.png" alt="project">
+            <div class="project-title">Proj 2</div>
+        </a>
+        <a href="plp.html" target="_blank" class="project project-tile project2-bg">
+            <img class="project-pic" src="../static/plp.png" alt="project">
+            <div class="project-title">proj 3</div>
+        </a>
+        
+        
+        
+        <div id="hidden-elements" style="display:none;">
+            <a href="#" target="_blank" class="project project-tile project2-bg">
+                <img class="project-pic" src="#" alt="project">
+                <div class="project-title">proj 1</div>
+            </a>
+            <a href="technicaldoc.html" target="_blank" class="project project-tile project2-bg">
+                <img class="project-pic" src="../static/technicaldoc.png" alt="project">
+                <div class="project-title">Proj 2</div>
+            </a>
+            <a href="plp.html" target="_blank" class="project project-tile project2-bg">
+                    <img class="project-pic" src="../static/plp.png" alt="project">
+                    <div class="project-title">proj 3</div>
+            </a>
+        </div>
+        <a class="show-all2" onclick="showProjectsA()">Show all</a>
+    </div>  
+
+    <div style="height: 40px; background: lightblue"></div>
+    
+    <div id="contact" class="contact">
+        <div class="header">
+            <h1>Let's work together...</h1>
+            <p>How do you take your coffee?</p>
+        </div>
+        <a href="https://facebook.com/paul.tuura" target="_blank" class="contact-details">Facebook</a>
+        <a id='profile-link' href="https://github.com/tuura032" target="_blank" class="contact-details">GitHub</a>
+        <a href="https://twitter.com/tuura032" target="_blank" class="contact-details">Twitter</a>
+        <a href="mailto:tuura032@gmail.com" class="contact-details">Send email</a>
+        <a href="tel:507-621-0448" class="contact-details">Call me</a>
+    </div>
+    
+    <footer>Template based on FCC project. 
+        <p>Created by Paul Tuura</p>
+    </footer>
+</body>
+</html>
