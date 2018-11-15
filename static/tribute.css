@@ -1,45 +1,35 @@
 html {
+  padding: 5px;
   font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', 'Tahoma', 'Sans-Serif';
   line-height: 1.5;
   font-size: 15px;
   font-weight: 400;
-  display: block; 
-}
+  display: block; }
 
 html, body {
   height: 100%;
   min-width: 260px; }
 
-
 #main {
-  background: linear-gradient(35deg, blue, teal, rgb(12, 109, 122));
+  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
   padding: 15px 15px 15px 15px; }
-
-#title {
-  margin-top: 30px;
-}
 
 #img-div {
   margin: 20px -5px -5px -5px;
   width: 100%;
   min-width: 470px;
   border: 5px solid white;
-  background: white; 
-}
+  background: white; }
 
 #img-caption {
   margin-top: 15px;
   margin-bottom: 10px; }
 
-#tribute-info {
-  margin-top: 40px;
-}
-
 body {
-  text-align: center; }
+  background: lightblue; }
   body h1 {
     text-align: center; }
   body div {
@@ -57,6 +47,5 @@ ul {
 
 li {
   margin: 10px; }
-
 
 /*# sourceMappingURL=tribute.css.map */
