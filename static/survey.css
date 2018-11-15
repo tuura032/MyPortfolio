@@ -1,0 +1,92 @@
+body {
+    background-color: lightblue;
+}
+
+h1, div {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+fieldset {
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+#survey-form {
+    background: white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    min-width: 500px;
+}
+
+option {
+    text-align: center;
+}
+
+.radio {
+    position: relative;
+    padding-bottom: 10px;
+    left: -45px;
+    display: block;
+    white-space: nowrap;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;
+    max-width: 95%;
+    resize:vertical;
+    overflow: auto;
+}
+
+.checkbox > li {
+    position: relative;
+    padding-bottom: 10px;
+    left: -45px;
+    display: block;
+    white-space: nowrap;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#description {
+    display: block;
+    background: white;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    min-width: 500px;
+}
+
+.dropdown {
+    width: 150px;
+    
+}

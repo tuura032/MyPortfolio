@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Survey!</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/survey.css"/>
+        
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Survey Form</h1>
+        <h2><p id="description">Exercise Frequency Questionnaire</p></h2>
+        <form action="{{ url_for('extends') }}" id="survey-form" method="POST">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="name" id="name-label">* Name: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autofocus autocomplete="off" type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="email" id="email-label">* Email: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autocomplete="off" type="email" name="email" id="email" class="input-field" placeholder="Enter Your Email" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="age" id="age-label">* Age: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input autocomplete="off" type="number" min="13" max="120" name="age" id="age" class="input-field" placeholder="Enter Your Age" style="width: 170px" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="pickdate">Highest Education Completed On: </label>
+                    </div>
+                    <div class="rightTab">
+                        <input type="date" id="pickdate" name="date">
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="radio">What is your highest level of educaiton completed?</label>
+                    </div>
+                    <div class="rightTab" id="radio">
+                        <ul style="list-style: none;">
+                            <li class="radio"><input id="highschool" type="radio" name="levels" value="highschool">
+                            <label for="highschool">High School</label></li>
+                            <li class="radio"><input id="associates" type="radio" value="associates">
+                                <label for="associates">Associates / 2 year Degree</label>
+                            </li>
+                            <li class="radio"><input id="college" type="radio" name="levels" value="college">
+                            <label for="college">College / 4 Year Degree</label></li>
+                            <li class="radio"><input id="masters" type="radio" name="levels" value="masters">
+                            <label for="masters">Masters or Higher</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+            <h3>Frequency and Type</h2>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="dropdown">What is your current activity level?</label>
+                </div>
+                <div class="rightTab">
+                    <select id="dropdown" name="activitylevel" class="dropdown">
+                        <option disabled selected hidden>--Select One--</option>
+                        <option value="sedentary">Sedentary</option>
+                        <option value="moderate">Moderately Active</option>
+                        <option value="active">Active</option>
+                        <option value="veryactive">Very Active</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="rowTab">
+                    <div class="labels">
+                        <label for="dropdown">How Often Do You Exercise?</label>
+                    </div>
+                    <div class="rightTab">
+                        <select id="dropdown" name="activitylevel" class="dropdown">
+                            <option disabled selected hidden>--Select One--</option>
+                            <option value="sedentary">Never</option>
+                            <option value="moderate">1 time per week</option>
+                            <option value="active">2 times per week</option>
+                            <option value="veryactive">3-4 times per week</option>
+                            <option value="veryactive">5+ times per week</option>
+                        </select> 
+                    </div>
+                </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="checkbox">What Are Your Most Common Form <br>of Physical Activity and Exercise? <br>(check all that apply)</label>
+                </div>
+                <div class="rightTab">
+                    <ul id="checkbox" style="list-style: none;" class="checkbox">
+                        <li><input type="checkbox" name="strength" id="checkbox" value="strength">Strength Training</li>
+                        <li><input type="checkbox" name="strength" id="checkbox" value="strength">Riding Bike<br></li>
+                        <li><input type="checkbox" name="strength" id="checkbox" value="strength">Walking<br></li>
+                        <li><input type="checkbox" name="strength" id="checkbox" value="strength">Running<br></li>
+                        <li><input type="checkbox" name="strength" id="checkbox" value="strength">Sprints (high intensity)<br></li>
+                        <li><input type="checkbox" name="strength" id="checkbox" value="strength">Leisure Sport/Activity<br></li>
+                        <li><input type="checkbox" name="strength" id="checkbox" value="recsport">Recreational Sport</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label style="margin-left: 80px;">Briefly Describe Any Other Details Regarding Your Exercise Behaviors:</label>
+                </div>
+                <div class="rightTab">
+                    <textarea placeholder="text goes here"></textarea>
+                </div>
+            </div>
+            <div class="rowTab">
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

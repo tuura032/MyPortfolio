@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../static/technicaldoc.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Paul's Webpage</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Intro to Javascript</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Survey</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plp.html">Product Landing Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tribute.html">Tribue</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="main-section">
+                <h2 style="text-align:center">Introduction to JavaScript</h2>
+                <p><h4 style="text-align: center">Principles of Coding</h4></p>
+            </section>
+            <section class="main-section" id="introduction">
+                <header>
+                    Introduction
+                </header>
+                <article>
+                    <p>
+                        JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. 
+                        Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its 
+                        environment to provide programmatic control over them.
+                    </p>
+                    <p>
+                        JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language 
+                        elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety 
+                        of purposes by supplementing it with additional objects; for example:
+                    </p>
+                    <p><li>
+                        Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object 
+                        Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond 
+                        to user events such as mouse clicks, form input, and page navigation.
+                    </li></p>
+                    <p>
+                        <li>
+                        Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. 
+                        For example, server-side extensions allow an application to communicate with a database, provide continuity of information 
+                        from one invocation to another of the application, or perform file manipulations on a server.
+                        </li>
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="code">
+                <h3>
+                    Code
+                </h3>
+                <div class="line"></div>
+                <article>
+                    <p>
+                        A program, often referred to as source code or just code, is a set of special instructions to tell the computer 
+                        what tasks to perform. Usually code is saved in a text file, although with JavaScript you can also type code directly 
+                        into a developer console in a browser, which we'll cover shortly.
+                    </p>
+                    <p>
+                        The rules for valid format and combinations of instructions is called a computer language, sometimes referred to as its 
+                        syntax, much the same as English tells you how to spell words and how to create valid sentences using words and punctuation.
+                    </p>
+                    <h4>
+                        Statements
+                    </h4>
+                    <p>
+                        In a computer language, a group of words, numbers, and operators that performs a specific task is a statement. In JavaScript, 
+                        a statement might look as follows:
+                        
+                        <pre>   a = b * 2;</pre>
+                    </p>
+                    <p>
+                        The characters <code>a</code> and <code>b</code> are called variables (see "Variables"), which are like simple boxes you can store 
+                        any of your stuff in. In programs, variables hold values (like the number 42) to be used by the program. Think of them as symbolic 
+                        placeholders for the values themselves.
+                    </p>
+                    <p>
+                        The <code>=</code> and <code>*</code> characters are operators (see "Operators") -- they perform actions with the values and 
+                        variables such as assignment and mathematic multiplication.
+                    </p>
+                    <p>
+                        The statement <code>a = b * 2;</code> tells the computer, roughly, to get the current value stored in the variable <code>b</code>, 
+                        multiply that value by 2, then store the result back into another variable we call <code>a</code>.
+                    </p>
+                    <p>
+                        Programs are just collections of many such statements, which together describe all the steps that it takes to perform your 
+                        program's purpose.
+                    </p>
+                    <h4>Expressions</h4>
+                    <p>
+                        Statements are made up of one or more expressions. An expression is any reference to a variable or value, or a set of variable(s) 
+                        and value(s) combined with operators.
+                    </p>
+                    <p>
+                        For example:
+                    </p>
+                    <pre>  a = b * 2;</pre>
+                    <p>
+                        This statement has four expressions in it:
+                    </p>
+
+                    <li>2 is a literal value expression</li>
+                    <li><code>b</code> is a variable expression, which means to retrieve its current value</li>
+                    <li><code>b * 2</code> is an arithmetic expression, which means to do the multiplication</li>
+                    <li><code>a = b * 2</code> is an assignment expression, which means to assign the result of the 
+                        <code>b * 2</code> expression to the variable a (more on assignments later)</li><p></p>
+                    <p>
+                        A general expression that stands alone is also called an expression statement, such as the following:
+                    </p>
+                    <pre>   b * 2;</pre>
+                    <p>This flavor of expression statement is not very common or useful, as generally it wouldn't have any effect on the running of the program -- 
+                    it would retrieve the value of b and multiply it by 2, but then wouldn't do anything with that result.</p>
+                    <p>A more common expression statement is a call expression statement (see "Functions"), as the entire statement is the function call expression 
+                    itself:</p>
+                    <pre>   alert( a );</pre>
+                    <h4>Executing a Program</h4>
+                    <p>
+                        How do those collections of programming statements tell the computer what to do? The program needs to be executed, also referred to as running 
+                        the program.
+                    </p>
+                    <p>
+                        Statements like <code>a = b * 2</code> are helpful for developers when reading and writing, but are not actually in a form the computer can directly 
+                        understand. So a special utility on the computer (either an interpreter or a compiler) is used to translate the code you write into commands a computer can understand.
+                    </p>
+                    <p>For some computer languages, this translation of commands is typically done from top to bottom, line by line, every time the program is 
+                    run, which is usually called interpreting the code.</p>
+                    
+
+                    <p>For other languages, the translation is done ahead of time, called compiling the code, so when the program runs later, what's running is 
+                    actually the already compiled computer instructions ready to go.</p>
+
+                    <p>It's typically asserted that JavaScript is interpreted, because your JavaScript source code is processed each time it's run. But that's 
+                    not entirely accurate. The JavaScript engine actually compiles the program on the fly and then immediately runs the compiled code.</p>
+                </article>
+            </section>
+            <section class="main-section" id="operators">
+                <h3>
+                    Operators
+                </h3>
+                <div class="line"></div>
+                <article>
+                    <p>Operators are how we perform actions on variables and values. We've already seen two JavaScript operators, the <code>=</code> and the <code>*</code>.
+
+                    <p>The <code>*</code> operator performs mathematic multiplication. Simple enough, right?</p>
+                        
+                    <p>The <code>=</code> equals operator is used for assignment -- we first calculate the value on the right-hand side (source 
+                        value) of the <code>=</code> and then put it into the variable that we specify on the left-hand side (target variable).</p>
+                        
+                    <p>Warning: This may seem like a strange reverse order to specify assignment. Instead of <code>a = 42</code>, some might 
+                    prefer to flip the order so the source value is on the left and the target variable is on the right, like 
+                    42 -> a (this is not valid JavaScript!). Unfortunately, the <code>a = 42</code> ordered form, and similar variations, 
+                    is quite prevalent in modern programming languages. If it feels unnatural, just spend some time rehearsing 
+                    that ordering in your mind to get accustomed to it.</p>
+                    
+                    <p>Consider:</p>
+                    
+                    <p><pre>   a = 2;
+   b = a + 1;</pre></p>
+                    <p>Here, we assign the 2 value to the a variable. Then, we get the value of the a variable (still 2), add 
+                    1 to it resulting in the value 3, then store that value in the b variable.</p>
+                    
+                    <p>While not technically an operator, you'll need the keyword var in every program, as it's the primary way 
+                    you declare (aka create) variables (see "Variables").</p>
+                    
+                    <p>You should always declare the variable by name before you use it. But you only need to declare a variable 
+                    once for each scope (see "Scope"); it can be used as many times after that as needed. For example:</p>
+                    
+                    <pre>   var a = 20;
+   a = a + 1;
+   a = a * 2;
+
+   console.log( a );	// 42</pre>
+
+                    <p>Here are some of the most common operators in JavaScript:</p>
+                    
+                    <li>Assignment: <code>=</code> as in <code>a = 2.</code></li>
+                    
+                    <li>Math: + (addition), - (subtraction), * (multiplication), and / (division), as in <code>a * 3</code>.</li>
+                    
+                    <li>Compound Assignment: +=, -=, *=, and /= are compound operators that combine a math operation with 
+                    assignment, as in <code>a += 2</code> (same as <code>a = a + 2</code>).</li>
+                    
+                    <li>Increment/Decrement: ++ (increment), -- (decrement), as in a++ (similar to <code>a = a + 1</code>).</li>
+                    
+                    <li>Object Property Access: . as in console.log().</li>
+                    
+                    <li>Objects are values that hold other values at specific named locations called properties. obj.a means 
+                    an object value called obj with a property of the name a. Properties can alternatively be accessed as obj["a"].</li> 
+                    
+                    <li>Equality: == (loose-equals), === (strict-equals), != (loose not-equals), !== (strict not-equals), as 
+                    in a == b.</li>
+                    
+                    <li>Comparison: < (less than), > (greater than), <= (less than or loose-equals), >= (greater than or loose-equals), 
+                    as in a <= b.</li>
+                    
+                    <li>>Logical: && (and), || (or), as in a || b that selects either a or b.</li>
+                    
+                    <li>These operators are used to express compound conditionals (see "Conditionals"), like if either a or b is true.</li>
+                </article>
+            </section>
+            <section class="main-section" id="operators">
+                <h3>
+                    Values & Types
+                </h3>
+                <div class="line"></div>
+                <article>
+                    <p>If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine, ninety-nine" 
+                    (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll need to pay (plus 
+                    taxes) to buy it. If you want to buy two of those phones, you can easily do the mental math to double that value 
+                    to get $199.98 for your base cost.</p>
+
+                    <p>If that same employee picks up another similar phone but says it's "free" (perhaps with air quotes), they're not 
+                    giving you a number, but instead another kind of representation of your expected cost ($0.00) -- the word "free."</p>
+                    
+                    <p>When you later ask if the phone includes a charger, that answer could only have been either "yes" or "no."</p>
+                    
+                    <p>In very similar ways, when you express values in a program, you choose different representations for those values 
+                    based on what you plan to do with them.</p>
+                    
+                    <p>These different representations for values are called types in programming terminology. JavaScript has built-in 
+                    types for each of these so called primitive values:</p>
+                    
+                    <li>When you need to do math, you want a number.</li>
+                    <li>When you need to print a value on the screen, you need a string (one or more characters, words, sentences).</li>
+                    <li>When you need to make a decision in your program, you need a boolean (true or false).</li>
+                    <p>Values that are included directly in the source code are called literals. string literals are surrounded by 
+                    double quotes "..." or single quotes ('...') -- the only difference is stylistic preference. number and boolean 
+                    literals are just presented as is (i.e., 42, true, etc.).</p>
+                    
+                    <p>Consider:</p>
+                    
+                    <pre>   "I am a string";
+   'I am also a string';
+
+   42;
+
+   true;
+   false;</pre>
+                    <p>Beyond string/number/boolean value types, it's common for programming languages to provide arrays, objects, 
+                    functions, and more. We'll cover much more about values and types throughout this chapter and the next.</p>
+                    
+                    <h4>Converting Between Types</h4>
+                    <p>If you have a number but need to print it on the screen, you need to convert the value to a string, and in 
+                    JavaScript this conversion is called "coercion." Similarly, if someone enters a series of numeric characters 
+                    into a form on an ecommerce page, that's a string, but if you need to then use that value to do math operations, 
+                    you need to coerce it to a number.</p>
+                    
+                    
+                    <p>JavaScript provides several different facilities for forcibly coercing between types. For example:</p>
+                    
+                    <pre>   var a = "42";
+   var b = Number( a );
+                    
+   console.log( a );	// "42"
+   console.log( b );	// 42</pre>
+                    
+                    <p>Using Number(..) (a built-in function) as shown is an explicit coercion from any other type to the number type. 
+                    That should be pretty straightforward.</p>
+                    
+                    <p>But a controversial topic is what happens when you try to compare two values that are not already of the same type, 
+                    which would require implicit coercion.</p>
+                    
+                    <p>When comparing the string "99.99" to the number 99.99, most people would agree they are equivalent. But they're not 
+                    exactly the same, are they? It's the same value in two different representations, two different types. You could say 
+                    they're "loosely equal," couldn't you?</p>
+                    
+                    <p>To help you out in these common situations, JavaScript will sometimes kick in and implicitly coerce values to the 
+                    matching types.</p>
+                    
+                    <p>So if you use the == loose equals operator to make the comparison "99.99" == 99.99, JavaScript will convert the left-hand 
+                    side "99.99" to its number equivalent 99.99. The comparison then becomes 99.99 == 99.99, which is of course true.</p>
+                    
+                    <p>While designed to help you, implicit coercion can create confusion if you haven't taken the time to learn the rules that 
+                    govern its behavior. Most JS developers never have, so the common feeling is that implicit coercion is confusing and harms 
+                    programs with unexpected bugs, and should thus be avoided. It's even sometimes called a flaw in the design of the language.</p>
+                    
+                    <p>However, implicit coercion is a mechanism that can be learned, and moreover should be learned by anyone wishing to take 
+                    JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your 
+                    programs better! The effort is well worth it.</p>
+                </article>
+            </section>
+            <section>
+                <h3>Reference</h3>
+                <div class="line"></div>
+                <li style="color:gray; margin-left:20px;">This is a practice webpage. All content is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" style="color: blue">MDN</a> and <a style="color: blue" href="https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md"">YDKJS</a>. Please refer to these sources for more information.</li>
+            </section>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>

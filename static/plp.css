@@ -1,0 +1,114 @@
+HTML {
+    vertical-align: baseline;
+}
+
+body {
+    background: linear-gradient(35deg, blue, teal, rgb(12, 109, 122));
+}
+
+
+main {
+    background: #f8f9fa!important;
+}
+
+
+#start {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.top-right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+}
+
+#img-text {
+    color: #202020;
+    letter-spacing: .1em;
+    text-shadow: 
+      -1px -1px 1px #111, 
+      2px 2px 1px #363636;
+}
+
+img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#features {
+    max-width: 75%;
+}
+
+#nutriton, #results, #home {
+    margin-top: 30px;
+}
+
+#exercise-sample {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#pricing {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid-black 3px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    width: calc(100%/3);
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 800px) {
+    .product-box {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+.level {
+    background: lightgray;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+ul {
+    margin: 15px 15px;
+    display: inline-block;
+    text-align: left;
+}
+
+button {
+    margin-bottom: 20px;
+}
